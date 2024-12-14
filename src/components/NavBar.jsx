@@ -4,9 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/icons8-github(2).svg';
-import logo_3_png from '../assets/img/black_logo_3_png.png'
-
-
 
 function NavBar() {
     const[activeLink, setActiveLink] = useState('home');
