@@ -1,1 +1,0 @@
-# portafolio_nicolas_ruiz
