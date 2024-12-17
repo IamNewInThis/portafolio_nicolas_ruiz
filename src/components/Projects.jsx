@@ -14,27 +14,35 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Next JS Ecommerce",
+      description: "Control de stock de Tecnologia",
       imgUrl: projImg1,
       category: "web",
+      slug: "next_commerce"
     },
     {
       id: 2,
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Redux",
+      description: "CRUD con Redux",
       imgUrl: projImg1,
       category: "web",
+      slug: "redux_crud"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      id: 3,
+      title: "Angular",
+      description: "Login con Angular y Supabase",
+      imgUrl: projImg1,
+      category: "web",
+      slug: "angular_login"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      id: 4,
+      title: "ToolHaus",
+      description: "Control de Herramientas",
       imgUrl: projImg3,
+      category: "erp",
+      slug: "toolhaus"
     },
     {
       title: "Business Startup",

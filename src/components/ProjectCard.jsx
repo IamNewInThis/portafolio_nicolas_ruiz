@@ -2,11 +2,11 @@ import React from 'react';
 import { Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const ProjectCard = ({ imgUrl, title, description, id, slug }) => {
+const ProjectCard = ({ imgUrl, title, description, id, slug, category }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate(`/projects/${id}`);
+    navigate(`/projects/${category}/${slug}`);
   };
 
   return (
