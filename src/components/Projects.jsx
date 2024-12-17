@@ -13,14 +13,18 @@ export const Projects = () => {
 
   const projects = [
     {
+      id: 1,
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      category: "web",
     },
     {
+      id: 2,
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg1,
+      category: "web",
     },
     {
       title: "Business Startup",
@@ -105,21 +109,15 @@ export const Projects = () => {
                 </Nav.Item>
               </Nav>
               <Tab.Content id="slideInUp">
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">
-                  <Row>
-                    {projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-                {/* Aquí puedes agregar otros Tab.Pane si es necesario */}
+                {['web', 'erp', 'mobile', 'ia', 'software'].map((category, idx) => (
+                  <Tab.Pane eventKey={['first', 'second', 'third', 'fourth', 'fifth'][idx]}>
+                    <Row>
+                      {projects.filter(project => project.category === category).map((project) => (
+                        <ProjectCard key={project.id} {...project} />
+                      ))}
+                    </Row>
+                  </Tab.Pane>
+                ))}
               </Tab.Content>
             </Tab.Container>
           </Col>
