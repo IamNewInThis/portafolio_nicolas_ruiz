@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router  basename="/portafolio_nicolas_ruiz">
       <div className="App">
         <NavBar />
         <Routes>

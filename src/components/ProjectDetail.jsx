@@ -52,17 +52,30 @@ const projectDetails = {
         { name: "Odoo", imageUrl: "https://cdn.worldvectorlogo.com/logos/odoo.svg" },
       ],
     }
+  },
+  mobile:{
+    pet_cholito: {
+      title: "Pet Cholito",
+      description:"Pet Cholito es una aplicación móvil desarrollada en React Native, con Firebase como backend. Ofrece creación de perfiles de mascotas, publicaciones, alertas geolocalizadas para adopciones o pérdidas, y acceso a servicios para mascotas. Combina diseño intuitivo, notificaciones en tiempo real y funcionalidades avanzadas en una red social.",
+      videoUrl:"https://player.vimeo.com/video/1040589963?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479",
+      technologies: [
+        { name: "React Native", imageUrl: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+        { name: "Firebase", imageUrl: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg" },
+        { name: "Google Cloud", imageUrl: "https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" },
+        { name: "Expo", imageUrl: "https://cdn.worldvectorlogo.com/logos/expo-1.svg" },
+        { name:"Mercado pago", imageUrl:"https://img.icons8.com/?size=512&id=nTLVtpxsNPaz&format=png"},
+      ],
+    },
   }
   
 };
-
+// src="https://player.vimeo.com/video/1040589963?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="pet_cholito"></iframe>
 const VideoEmbed = ({ videoUrl }) => {
   return (
     <div className="video-container">
       <iframe
+        className="project-video"
         src={videoUrl}
-        width="540"
-        height="360"
         frameBorder="0"
         allow="autoplay; fullscreen"
         title="Vimeo Video"
@@ -90,21 +103,22 @@ const ProjectDetail = () => {
         
         <VideoEmbed videoUrl={project.videoUrl} />
 
-
-        <div className="project-links">
-          <h3>Enlaces:</h3>
-          {project.links && (
-            <ul>
-              {project.links.github && (
-                <li>
-                  <a href={project.links.github} target="_blank" rel="noreferrer">
-                    GitHub
-                  </a>
-                </li>
-              )}
-            </ul>
-          )}
-        </div>
+        {project.links && (
+          <div className="project-links">
+            <h3>Enlaces:</h3>
+            {project.links && (
+              <ul>
+                {project.links.github && (
+                  <li>
+                    <a href={project.links.github} target="_blank" rel="noreferrer">
+                      GitHub
+                    </a>
+                  </li>
+                )}
+              </ul>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="project-detail-right">

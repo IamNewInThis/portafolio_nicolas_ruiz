@@ -8,7 +8,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
   const [projectDescription, setProjectDescription] = useState(
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    "Proyectos WEB: Desarrollo de aplicaciones web con tecnologías React, NextJS, Arquitectura MERN."
   );
 
   const projects = [
@@ -44,15 +44,13 @@ export const Projects = () => {
       category: "erp",
       slug: "toolhaus"
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+    { 
+      id: 5,
+      title: "Pet Cholito",
+      description: "Aplicación de adopción de mascotas",
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      category: "mobile",
+      slug: "pet_cholito"
     },
   ];
 
@@ -80,7 +78,7 @@ export const Projects = () => {
         break;
       default:
         setProjectDescription(
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          "Proyectos WEB: Desarrollo de aplicaciones web con tecnologías React, NextJS, Arquitectura MERN."
         );
         break;
     }
@@ -112,9 +110,9 @@ export const Projects = () => {
                 <Nav.Item>
                   <Nav.Link eventKey="third">Proyectos Moviles</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Nav.Link eventKey="fifth">Proyectos de Software</Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
               </Nav>
               <Tab.Content id="slideInUp">
                 {['web', 'erp', 'mobile', 'ia', 'software'].map((category, idx) => (
