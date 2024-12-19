@@ -31,11 +31,13 @@ export default function NavBar() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggle-icon">
+            <i className="fas fa-bars"></i> 
+          </span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {/* Home Link */}
+            {/* Enlaces de navegación */}
             <Nav.Link
               as={location.pathname === "/" ? ScrollLink : Link}
               to={location.pathname === "/" ? "home" : "/"}
@@ -48,8 +50,6 @@ export default function NavBar() {
             >
               Home
             </Nav.Link>
-
-            {/* Skills Link */}
             <Nav.Link
               as={location.pathname === "/" ? ScrollLink : Link}
               to={location.pathname === "/" ? "skills" : "/"}
@@ -62,8 +62,6 @@ export default function NavBar() {
             >
               Skills
             </Nav.Link>
-
-            {/* Projects Link */}
             <Nav.Link
               as={location.pathname === "/" ? ScrollLink : Link}
               to={location.pathname === "/" ? "projects" : "/"}
@@ -77,29 +75,29 @@ export default function NavBar() {
               Projects
             </Nav.Link>
           </Nav>
+          {/* Redes sociales y botón dentro del Collapse */}
+          <span className="navbar-text">
+            <div className="social-icon">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/nicolas-ruiz-037aa5222/"
+              >
+                <img src={navIcon1} alt="" />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/IamNewInThis"
+              >
+                <img src={navIcon2} alt="" />
+              </a>
+              <button className="vdd" onClick={() => console.log("connect")}>
+                <span>Let's Connect</span>
+              </button>
+            </div>
+          </span>
         </Navbar.Collapse>
-        <span className="navbar-text">
-          <div className="social-icon">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/nicolas-ruiz-037aa5222/"
-            >
-              <img src={navIcon1} alt="" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/IamNewInThis"
-            >
-              <img src={navIcon2} alt="" />
-            </a>
-
-            <button className="vdd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
-          </div>
-        </span>
       </Container>
     </Navbar>
   );

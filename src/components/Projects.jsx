@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import toolhaus_img from "../assets/img/toolhaus_img.jpeg";
+import task_manager_img from "../assets/img/task_manager_img.png";
 import projImg3 from "../assets/img/project-img3.png";
+import reduxImg from "../assets/img/redux_img.png";
+import ecommerceImg from "../assets/img/ecommerce_img.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
@@ -16,7 +18,7 @@ export const Projects = () => {
       id: 1,
       title: "Next JS Ecommerce",
       description: "Control de stock de Tecnologia",
-      imgUrl: projImg1,
+      imgUrl: ecommerceImg,
       category: "web",
       slug: "next_commerce"
     },
@@ -24,7 +26,7 @@ export const Projects = () => {
       id: 2,
       title: "Redux",
       description: "CRUD con Redux",
-      imgUrl: projImg1,
+      imgUrl: reduxImg,
       category: "web",
       slug: "redux_crud"
     },
@@ -32,7 +34,7 @@ export const Projects = () => {
       id: 3,
       title: "Angular",
       description: "Login con Angular y Supabase",
-      imgUrl: projImg1,
+      imgUrl: task_manager_img,
       category: "web",
       slug: "angular_login"
     },
@@ -40,7 +42,7 @@ export const Projects = () => {
       id: 4,
       title: "ToolHaus",
       description: "Control de Herramientas",
-      imgUrl: projImg3,
+      imgUrl: toolhaus_img,
       category: "erp",
       slug: "toolhaus"
     },
