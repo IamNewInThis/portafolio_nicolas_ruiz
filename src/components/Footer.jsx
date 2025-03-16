@@ -11,7 +11,7 @@ const Footer = () => {
                 <Row >
                     <Col size={12} sm={12} className="text-center text-sm-end mt-5" >
                         <div className='social-icon'>
-                            <a href='https://www.linkedin.com/in/nicolas-ruiz-037aa5222/' ><img src={navIcon1} alt=''></img></a>
+                            <a href='https://www.linkedin.com/in/nicolás-allen-ruiz-037aa5222' ><img src={navIcon1} alt=''></img></a>
                             <a href='https://github.com/IamNewInThis'><img src={navIcon2} alt=''></img></a>
                         </div>
                         <p>CopyRight 2025. Inspirado en webdecoded</p>
