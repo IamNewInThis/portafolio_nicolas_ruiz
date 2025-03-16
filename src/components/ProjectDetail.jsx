@@ -39,6 +39,20 @@ const projectDetails = {
       links: {
         github: "https://github.com/IamNewInThis/task_manager",
       },
+    },
+    "spotify_convert": {
+
+      title: "Spotify Convert",
+      description: "Spotify Convert es una aplicación web que automatiza la creación de playlists en YouTube basadas en playlists de Spotify, eliminando la necesidad de buscar y transferir canciones manualmente.",
+      videoUrl: "https://player.vimeo.com/video/1066336522?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479",
+      technologies: [
+        { name: "React", imageUrl: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+        { name: "Spotify API", imageUrl: "https://cdn.worldvectorlogo.com/logos/spotify-2.svg" },
+        { name: "Google API", imageUrl: "https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" },
+      ],
+      links: {
+        host: "https://spotify-convert.vercel.app/"
+      },
     }
   },
   erp:{
@@ -112,6 +126,14 @@ const ProjectDetail = () => {
                   <li>
                     <a href={project.links.github} target="_blank" rel="noreferrer">
                       GitHub
+                    </a>
+                  </li>
+                )}
+
+                {project.links.host && (
+                  <li>
+                    <a href={project.links.host} target="_blank" rel="noreferrer">
+                      Host
                     </a>
                   </li>
                 )}

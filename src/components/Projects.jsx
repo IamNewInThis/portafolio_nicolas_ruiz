@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+
 import toolhaus_img from "../assets/img/toolhaus_img.jpeg";
+import spotify_convert_img from "../assets/img/spotify_convert.png";
 import task_manager_img from "../assets/img/task_manager_img.png";
 import projImg3 from "../assets/img/project-img3.png";
 import reduxImg from "../assets/img/redux_img.png";
@@ -40,6 +42,14 @@ export const Projects = () => {
     },
     {
       id: 4,
+      title: "Spotify Converter",
+      description: "Conversor de Playlist de Spotify a Youtube",
+      imgUrl: spotify_convert_img,
+      category: "web",
+      slug: "spotify_convert"
+    },
+    {
+      id: 5,
       title: "ToolHaus",
       description: "Control de Herramientas",
       imgUrl: toolhaus_img,
@@ -47,7 +57,7 @@ export const Projects = () => {
       slug: "toolhaus"
     },
     { 
-      id: 5,
+      id: 6,
       title: "Pet Cholito",
       description: "Aplicación de adopción de mascotas",
       imgUrl: projImg3,

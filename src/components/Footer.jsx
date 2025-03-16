@@ -14,7 +14,7 @@ const Footer = () => {
                             <a href='https://www.linkedin.com/in/nicolas-ruiz-037aa5222/' ><img src={navIcon1} alt=''></img></a>
                             <a href='https://github.com/IamNewInThis'><img src={navIcon2} alt=''></img></a>
                         </div>
-                        <p>CopyRight 2024. All Right Reserved</p>
+                        <p>CopyRight 2025. Inspirado en webdecoded</p>
                     </Col>
                 </Row>
             </Container>
