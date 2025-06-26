@@ -53,7 +53,21 @@ const projectDetails = {
       links: {
         host: "https://spotify-convert.vercel.app/"
       },
-    }
+    },
+    "nextjs_chat": {
+      title: "NextJS Chat",
+      description: "NextJS Chat es una aplicación de chat en tiempo real desarrollada con Next.js y Supabase, permitiendo a los usuarios comunicarse instantáneamente en chats privados",
+      videoUrl: "",
+      technologies: [
+        { name: "Next.js", imageUrl: "https://cdn.worldvectorlogo.com/logos/next-js.svg" },
+        { name: "Supabase", imageUrl: "https://styles.redditmedia.com/t5_47da3l/styles/communityIcon_8wbqkp0rozjd1.jpg?format=pjpg&s=70862eec9c29aa0c25f2a6b9e708698dd03474e5" },
+        { name: "Tailwind CSS", imageUrl: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" },  
+      ],
+      links: {
+        github: "https://github.com/IamNewInThis/Next-Chat-Copilot",
+        host: "https://next-chat-copilot.vercel.app/"
+      },
+    },
   },
   erp:{
     toolhaus: {
@@ -65,7 +79,20 @@ const projectDetails = {
         { name: "XML", imageUrl: "https://cdn.worldvectorlogo.com/logos/xml-2.svg" },
         { name: "Odoo", imageUrl: "https://cdn.worldvectorlogo.com/logos/odoo.svg" },
       ],
-    }
+    },
+    purchase_solicitudes: {
+      title: "Purchase Solicitudes",
+      description: "Módulo de Odoo que extiende el flujo de compras para permitir que cualquier usuario cree solicitudes de materiales o servicios, gestionando un control externo a las requisiciones estándar y facilitando la trazabilidad de las solicitudes.",
+      videoUrl: "",
+      technologies: [
+        { name: "Odoo", imageUrl: "https://cdn.worldvectorlogo.com/logos/odoo.svg" },
+        { name: "Python", imageUrl: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+        { name: "XML", imageUrl: "https://cdn.worldvectorlogo.com/logos/xml-2.svg" },
+      ],
+      links: {
+        // Puedes agregar enlaces aquí si los tienes en el futuro
+      },
+    },
   },
   mobile:{
     pet_cholito: {
@@ -83,7 +110,7 @@ const projectDetails = {
   }
   
 };
-// src="https://player.vimeo.com/video/1040589963?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="pet_cholito"></iframe>
+
 const VideoEmbed = ({ videoUrl }) => {
   return (
     <div className="video-container">
@@ -120,24 +147,15 @@ const ProjectDetail = () => {
         {project.links && (
           <div className="project-links">
             <h3>Enlaces:</h3>
-            {project.links && (
-              <ul>
-                {project.links.github && (
-                  <li>
-                    <a href={project.links.github} target="_blank" rel="noreferrer">
-                      GitHub
-                    </a>
-                  </li>
-                )}
-
-                {project.links.host && (
-                  <li>
-                    <a href={project.links.host} target="_blank" rel="noreferrer">
-                      Host
-                    </a>
-                  </li>
-                )}
-              </ul>
+            {project.links.github && (
+              <a href={project.links.github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            )}
+            {project.links.host && (
+              <a href={project.links.host} target="_blank" rel="noreferrer">
+                Host
+              </a>
             )}
           </div>
         )}

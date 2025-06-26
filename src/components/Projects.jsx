@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import toolhaus_img from "../assets/img/toolhaus_img.jpeg";
 import spotify_convert_img from "../assets/img/spotify_convert.png";
 import task_manager_img from "../assets/img/task_manager_img.png";
+import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import reduxImg from "../assets/img/redux_img.png";
 import ecommerceImg from "../assets/img/ecommerce_img.png";
@@ -50,14 +51,30 @@ export const Projects = () => {
     },
     {
       id: 5,
+      title: "NextJS Chat",
+      description: "Chat en tiempo real con NextJS y Supabase",
+      imgUrl: projImg2,
+      category: "web",
+      slug: "nextjs_chat"
+    },
+    {
+      id: 6,
       title: "ToolHaus",
       description: "Control de Herramientas",
       imgUrl: toolhaus_img,
       category: "erp",
       slug: "toolhaus"
     },
+    {
+      id: 7,
+      title: "Purchase Solicitudes",
+      description: "Control de Solicitudes de Compra",
+      imgUrl: toolhaus_img,
+      category: "erp",
+      slug: "purchase_solicitudes"
+    },
     { 
-      id: 6,
+      id: 8,
       title: "Pet Cholito",
       description: "Aplicación de adopción de mascotas",
       imgUrl: projImg3,
