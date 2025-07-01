@@ -3,11 +3,13 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 
 import toolhaus_img from "../assets/img/toolhaus_img.jpeg";
+import purchase_solicitudes_img from "../assets/img/purchase_solicitudes_img.png";
 import spotify_convert_img from "../assets/img/spotify_convert.png";
 import task_manager_img from "../assets/img/task_manager_img.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import reduxImg from "../assets/img/redux_img.png";
+import chatNextImg from "../assets/img/chat_next_img.png";
 import ecommerceImg from "../assets/img/ecommerce_img.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -53,7 +55,7 @@ export const Projects = () => {
       id: 5,
       title: "NextJS Chat",
       description: "Chat en tiempo real con NextJS y Supabase",
-      imgUrl: projImg2,
+      imgUrl: chatNextImg,
       category: "web",
       slug: "nextjs_chat"
     },
@@ -69,7 +71,7 @@ export const Projects = () => {
       id: 7,
       title: "Purchase Solicitudes",
       description: "Control de Solicitudes de Compra",
-      imgUrl: toolhaus_img,
+      imgUrl: purchase_solicitudes_img,
       category: "erp",
       slug: "purchase_solicitudes"
     },
