@@ -44,15 +44,3 @@ Este es mi portafolio personal desarrollado con React.js, que muestra mis proyec
 - Express.js (para el backend del formulario de contacto)
 - Nodemailer (para el envío de emails)
 
-## 📝 Notas importantes
-
-- El proyecto está configurado para desplegarse en GitHub Pages
-- La URL base está configurada como `/portafolio_nicolas_ruiz/`
-- Los archivos estáticos se encuentran en la carpeta `build` después de compilar
-
-## 🔧 Configuración
-
-El archivo `package.json` incluye:
-- **homepage**: Configurada para GitHub Pages
-- **scripts de deploy**: Automatizados con gh-pages
-- **dependencias**: Todas las librerías necesarias incluidas
