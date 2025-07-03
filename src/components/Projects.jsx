@@ -75,8 +75,16 @@ export const Projects = () => {
       category: "erp",
       slug: "purchase_solicitudes"
     },
-    { 
+    {
       id: 8,
+      title: "SII Comparación factura",
+      description: "Comparación de facturas con SII",
+      imgUrl: projImg2,
+      category: "erp",
+      slug: "sii_comparacion_factura"
+    },
+    { 
+      id: 9,
       title: "Pet Cholito",
       description: "Aplicación de adopción de mascotas",
       imgUrl: projImg3,

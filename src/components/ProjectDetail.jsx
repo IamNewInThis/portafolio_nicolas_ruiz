@@ -93,6 +93,19 @@ const projectDetails = {
         // Puedes agregar enlaces aquí si los tienes en el futuro
       },
     },
+    sii_comparacion_factura: {
+      title: "SII Comparación factura",
+      description: "Submódulo para contabilidad que agrega un menú donde se pueden subir archivos CSV descargados del SII. Cuando se procesan estos archivos, el sistema indica cuáles facturas faltan por ingresar al sistema.",
+      videoUrl: "https://player.vimeo.com/video/1098370366?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479",
+      technologies: [
+        { name: "Odoo", imageUrl: "https://cdn.worldvectorlogo.com/logos/odoo.svg" },
+        { name: "Python", imageUrl: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+        { name: "XML", imageUrl: "https://cdn.worldvectorlogo.com/logos/xml-2.svg" },
+      ],
+      links: {
+        // Puedes agregar enlaces aquí si los tienes en el futuro
+      },
+    },
   },
   mobile:{
     pet_cholito: {
