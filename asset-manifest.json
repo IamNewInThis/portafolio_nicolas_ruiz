@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio_nicolas_ruiz/static/css/main.30dfcf56.css",
-    "main.js": "/portafolio_nicolas_ruiz/static/js/main.035464dc.js",
+    "main.js": "/portafolio_nicolas_ruiz/static/js/main.ae6d7c42.js",
     "static/media/banner_projects.png": "/portafolio_nicolas_ruiz/static/media/banner_projects.fcca7b253b980a4b9365.png",
     "static/media/color-sharp.png": "/portafolio_nicolas_ruiz/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portafolio_nicolas_ruiz/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -35,14 +35,14 @@
     "static/media/meter2.svg": "/portafolio_nicolas_ruiz/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
     "static/media/meter1.svg": "/portafolio_nicolas_ruiz/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
     "static/media/meter3.svg": "/portafolio_nicolas_ruiz/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
-    "static/media/icons8-github(2).svg": "/portafolio_nicolas_ruiz/static/media/icons8-github(2).0b494e85d9e04dc12ddc73937ea54f4b.svg",
     "index.html": "/portafolio_nicolas_ruiz/index.html",
+    "static/media/icons8-github(2).svg": "/portafolio_nicolas_ruiz/static/media/icons8-github(2).0b494e85d9e04dc12ddc73937ea54f4b.svg",
     "static/media/nav-icon1.svg": "/portafolio_nicolas_ruiz/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.30dfcf56.css.map": "/portafolio_nicolas_ruiz/static/css/main.30dfcf56.css.map",
-    "main.035464dc.js.map": "/portafolio_nicolas_ruiz/static/js/main.035464dc.js.map"
+    "main.ae6d7c42.js.map": "/portafolio_nicolas_ruiz/static/js/main.ae6d7c42.js.map"
   },
   "entrypoints": [
     "static/css/main.30dfcf56.css",
-    "static/js/main.035464dc.js"
+    "static/js/main.ae6d7c42.js"
   ]
 }
