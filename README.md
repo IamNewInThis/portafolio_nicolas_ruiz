@@ -4,7 +4,9 @@ Este es mi portafolio personal desarrollado con React.js, que muestra mis proyec
 
 ## 🚀 Despliegue
 
-### Pasos para desplegar en GitHub Pages:
+### Opción 1: GitHub Pages
+
+#### Pasos para desplegar en GitHub Pages:
 
 1. **Instalar dependencias:**
    ```bash
@@ -26,12 +28,38 @@ Este es mi portafolio personal desarrollado con React.js, que muestra mis proyec
    - Sube los archivos de la carpeta `build` a la rama `gh-pages`
    - Hace el sitio disponible en: https://IamNewInThis.github.io/portafolio_nicolas_ruiz
 
+### Opción 2: Vercel
+
+#### Pasos para desplegar en Vercel:
+
+1. **Instalar Vercel CLI (primera vez):**
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Iniciar sesión en Vercel:**
+   ```bash
+   vercel login
+   ```
+
+3. **Desplegar:**
+   ```bash
+   npm run deploy:vercel
+   ```
+   O simplemente:
+   ```bash
+   vercel --prod
+   ```
+
+**Nota sobre las advertencias:** Las advertencias de dependencias deprecadas que ves son normales y provienen de `react-scripts`. No afectan el funcionamiento del sitio. Se resolverán cuando React actualice a `react-scripts` 6.x en el futuro.
+
 ### Comandos disponibles:
 
 - `npm start` - Ejecuta la aplicación en modo desarrollo
 - `npm run build` - Compila la aplicación para producción
 - `npm test` - Ejecuta las pruebas
 - `npm run deploy` - Despliega la aplicación a GitHub Pages
+- `npm run deploy:vercel` - Despliega la aplicación a Vercel
 
 ## 🛠️ Tecnologías utilizadas
 
