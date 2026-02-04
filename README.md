@@ -32,6 +32,8 @@ Este es mi portafolio personal desarrollado con React.js, que muestra mis proyec
 
 #### Pasos para desplegar en Vercel:
 
+**IMPORTANTE:** Antes de desplegar en Vercel, asegúrate de que en [package.json](package.json) el `homepage` esté configurado como `"homepage": "/"` (ya está configurado).
+
 1. **Instalar Vercel CLI (primera vez):**
    ```bash
    npm install -g vercel
@@ -50,6 +52,10 @@ Este es mi portafolio personal desarrollado con React.js, que muestra mis proyec
    ```bash
    vercel --prod
    ```
+
+**Cambiar entre GitHub Pages y Vercel:**
+- **Para GitHub Pages:** En `package.json`, cambia `"homepage": "/"` a `"homepage": "https://IamNewInThis.github.io/portafolio_nicolas_ruiz"`
+- **Para Vercel:** Usa `"homepage": "/"` (configuración actual)
 
 **Nota sobre las advertencias:** Las advertencias de dependencias deprecadas que ves son normales y provienen de `react-scripts`. No afectan el funcionamiento del sitio. Se resolverán cuando React actualice a `react-scripts` 6.x en el futuro.
 

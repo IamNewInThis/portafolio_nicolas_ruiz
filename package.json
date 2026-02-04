@@ -2,7 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IamNewInThis.github.io/portafolio_nicolas_ruiz",
+  "_comment_homepage": "Para GitHub Pages descomentar la línea siguiente, para Vercel dejarla comentada",
+  "homepage": "/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@testing-library/jest-dom": "^6.8.0",
