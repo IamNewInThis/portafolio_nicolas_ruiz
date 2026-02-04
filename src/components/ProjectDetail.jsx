@@ -62,7 +62,7 @@ const projectDetails = {
         "nextjs_chat": {
             title: "NextJS Chat",
             description: "NextJS Chat es una aplicación de chat en tiempo real desarrollada con Next.js y Supabase, permitiendo a los usuarios comunicarse instantáneamente en chats privados.",
-            videoUrl: "",
+            videoUrl: "https://player.vimeo.com/video/1161974146?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479",
             technologies: [
                 { name: "Next.js", imageUrl: "https://cdn.worldvectorlogo.com/logos/next-js.svg", colorClass: "nextjs" },
                 { name: "Supabase", imageUrl: "https://styles.redditmedia.com/t5_47da3l/styles/communityIcon_8wbqkp0rozjd1.jpg?format=pjpg&s=70862eec9c29aa0c25f2a6b9e708698dd03474e5", colorClass: "supabase" },
