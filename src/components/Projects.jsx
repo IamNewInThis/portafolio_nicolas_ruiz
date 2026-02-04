@@ -9,7 +9,6 @@ import nomina_chilena_img from "../assets/img/nomina_chilena.png";
 
 import spotify_convert_img from "../assets/img/spotify_convert.png";
 import task_manager_img from "../assets/img/task_manager_img.png";
-import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import reduxImg from "../assets/img/redux_img.png";
 import chatNextImg from "../assets/img/chat_next_img.png";
