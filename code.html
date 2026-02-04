@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pet Cholito - Project Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d125f4",
+                        "background-light": "#f8f5f8",
+                        "background-dark": "#1f1022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    backgroundImage: {
+                        'futuristic-gradient': 'radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.4) 0%, rgba(32, 16, 35, 0) 50%), radial-gradient(circle at 85% 30%, rgba(209, 37, 244, 0.15) 0%, rgba(32, 16, 35, 0) 50%)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(209, 37, 244, 0.3);
+            transition: all 0.3s ease;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px rgba(209, 37, 244, 0.5);
+            transform: translateY(-2px);
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f1022; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #422249; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d125f4; 
+        }
+        
+        /* Mobile Frame CSS */
+        .mobile-frame {
+            border: 12px solid #2a2a2a;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(209, 37, 244, 0.1);
+        }
+        .mobile-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 24px;
+            background: #2a2a2a;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- Background Decoration -->
+<div class="fixed inset-0 pointer-events-none z-0 bg-futuristic-gradient"></div>
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full glass-panel border-b border-white/5">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<!-- Logo -->
+<div class="flex items-center gap-2 cursor-pointer group">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-800 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</div>
+<span class="text-white text-lg font-bold tracking-tight">DevPortfolio</span>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white/70 hover:text-primary transition-colors text-sm font-medium" href="#">Home</a>
+<a class="text-white/70 hover:text-primary transition-colors text-sm font-medium" href="#">Skills</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-primary after:rounded-full" href="#">Projects</a>
+<a class="text-white/70 hover:text-primary transition-colors text-sm font-medium" href="#">Contact</a>
+</nav>
+<!-- CTA Button -->
+<button class="hidden md:flex items-center gap-2 px-5 py-2 rounded-full bg-primary/20 hover:bg-primary/40 border border-primary/30 text-primary hover:text-white text-sm font-bold transition-all duration-300">
+<span>Let's Connect</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-white p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="relative z-10 flex-grow flex flex-col items-center justify-center py-12 lg:py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-[1100px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+<!-- Left Column: Mobile Mockup -->
+<div class="flex justify-center lg:justify-end order-2 lg:order-1">
+<div class="relative w-[280px] sm:w-[320px] aspect-[9/19] mobile-frame bg-black group/phone">
+<!-- Notch -->
+<div class="mobile-notch"></div>
+<!-- Screen Content (Image representing app UI) -->
+<div class="w-full h-full bg-[#1a1a1a] relative overflow-hidden">
+<!-- Simulated App Header -->
+<div class="absolute top-0 w-full h-20 bg-gradient-to-b from-black/80 to-transparent z-10 p-6 pt-8 flex justify-between items-center text-white">
+<span class="material-symbols-outlined">menu</span>
+<span class="font-bold">Pet Cholito</span>
+<span class="material-symbols-outlined">account_circle</span>
+</div>
+<!-- App Content Mockup -->
+<img alt="Mobile app interface showing cute dogs available for adoption" class="w-full h-full object-cover opacity-80 group-hover/phone:scale-105 transition-transform duration-700" data-alt="Mobile app interface showing cute dogs available for adoption" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMaj5j3dxSEsN59SggcUYIuB6MQbA-cEgqtr2zT4LT1h33Dzk85QQDnYwEFqLygvg2te84SnEZH6sLT5UIA16abBTcPCpNPNBpeBxg6UEVgZ0Sc4ep9i8kFncdLMwx8XE1E1JywL0WjtHh4Q2fDZRYYC3rcT91zjLouwiwEqXgpOQ_daTZH86GV6JTV6RRAjq0v2R0ZL3HJ2gMXxs882kxj1FmnAlUa495EZPSggtFCD3f184E61lVObF_ioaQFVL7fxi-QwBTD4Ts"/>
+<!-- Floating Interaction Elements (Simulated UI) -->
+<div class="absolute bottom-6 left-4 right-4 bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/10 flex items-center gap-3 animate-pulse">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">pets</span>
+</div>
+<div class="flex-1">
+<div class="h-2 w-24 bg-white/80 rounded mb-1.5"></div>
+<div class="h-2 w-16 bg-white/40 rounded"></div>
+</div>
+<button class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xs">check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Project Details -->
+<div class="flex flex-col gap-6 order-1 lg:order-2">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 text-sm font-medium">
+<a class="text-primary/70 hover:text-primary transition-colors" href="#">Projects</a>
+<span class="text-white/20">/</span>
+<span class="text-white">Mobile Apps</span>
+</div>
+<!-- Headline Area -->
+<div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-2">Pet Cholito</h1>
+<div class="flex flex-wrap items-center gap-3 text-sm sm:text-base">
+<span class="text-primary font-medium">Lead Developer</span>
+<span class="w-1 h-1 rounded-full bg-white/30"></span>
+<span class="text-white/60">Full Stack Mobile Application</span>
+<span class="w-1 h-1 rounded-full bg-white/30"></span>
+<span class="text-white/60">2023</span>
+</div>
+</div>
+<!-- Description -->
+<div class="prose prose-invert max-w-none">
+<p class="text-white/80 text-lg leading-relaxed">
+                        A comprehensive pet adoption platform designed to connect local animal shelters with potential pet owners in Latin America. The application solves the fragmentation in pet adoption by centralizing data from over 50 shelters.
+                    </p>
+<p class="text-white/60 text-base leading-relaxed mt-4">
+                        Key features include <span class="text-white font-medium">real-time chat</span> powered by WebSocket, geolocation services for reporting lost pets on a map, and secure donation processing integrated directly with Mercado Pago API.
+                    </p>
+</div>
+<!-- Technologies -->
+<div class="mt-2">
+<h3 class="text-white/40 text-xs font-bold uppercase tracking-wider mb-4">Technologies Used</h3>
+<div class="flex flex-wrap gap-2">
+<span class="glass-panel px-3 py-1.5 rounded-lg text-sm text-[#61dafb] flex items-center gap-1.5 font-medium hover:bg-white/5 cursor-default transition-colors">
+<span class="material-symbols-outlined text-base">code</span> React Native
+                        </span>
+<span class="glass-panel px-3 py-1.5 rounded-lg text-sm text-[#ffca28] flex items-center gap-1.5 font-medium hover:bg-white/5 cursor-default transition-colors">
+<span class="material-symbols-outlined text-base">database</span> Firebase
+                        </span>
+<span class="glass-panel px-3 py-1.5 rounded-lg text-sm text-[#4285f4] flex items-center gap-1.5 font-medium hover:bg-white/5 cursor-default transition-colors">
+<span class="material-symbols-outlined text-base">cloud</span> Google Cloud
+                        </span>
+<span class="glass-panel px-3 py-1.5 rounded-lg text-sm text-white flex items-center gap-1.5 font-medium hover:bg-white/5 cursor-default transition-colors">
+<span class="material-symbols-outlined text-base">smartphone</span> Expo
+                        </span>
+<span class="glass-panel px-3 py-1.5 rounded-lg text-sm text-[#009ee3] flex items-center gap-1.5 font-medium hover:bg-white/5 cursor-default transition-colors">
+<span class="material-symbols-outlined text-base">payments</span> Mercado Pago
+                        </span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-4 mt-6 pt-6 border-t border-white/10">
+<a class="glow-effect flex-1 sm:flex-none flex items-center justify-center gap-2 bg-primary text-white font-bold h-12 px-8 rounded-lg hover:bg-primary/90 transition-colors" href="#">
+<span>Live Demo</span>
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+<a class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium h-12 px-8 rounded-lg transition-colors backdrop-blur-sm" href="#">
+<span class="material-symbols-outlined text-lg">code</span>
+<span>View Source</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Stats Section -->
+<div class="w-full max-w-[1100px] mt-24 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="glass-panel p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+<span class="text-3xl font-bold text-white mb-1">50+</span>
+<span class="text-sm text-white/50">Shelters Onboarded</span>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+<span class="text-3xl font-bold text-white mb-1">1.2k</span>
+<span class="text-sm text-white/50">Monthly Active Users</span>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+<span class="text-3xl font-bold text-white mb-1">4.8</span>
+<span class="text-sm text-white/50">App Store Rating</span>
+</div>
+<div class="glass-panel p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+<span class="text-3xl font-bold text-white mb-1">300+</span>
+<span class="text-sm text-white/50">Successful Adoptions</span>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto w-full border-t border-white/5 py-8 bg-black/20 backdrop-blur-sm">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-white/40 text-sm">© 2023 DevPortfolio. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-white/40 hover:text-white transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+<a class="text-white/40 hover:text-white transition-colors" href="#">
+<span class="sr-only">GitHub</span>
+<svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
